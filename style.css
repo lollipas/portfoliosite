@@ -51,11 +51,11 @@ header{
     pointer-events: all;
 }
 
-
 .nav-link a{
     color: white;
     font-size: 20px;
     text-decoration: none;
+    
 }
 
 main{
@@ -72,6 +72,11 @@ main{
 }
 
 #profession{
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+#profession.pre-animation{
     text-align: center;
 }
 
@@ -92,11 +97,18 @@ main{
     }
 
     .nav-links{
+        
         display: flex;
+        height: 10vh;
+        width: 100%;
         position: relative;
+        flex-direction: row;
         justify-content: space-evenly;
         margin: auto;
         list-style-type: none;
+        clip-path: none;
+        -webkit-clip-path: none;
+        pointer-events: all;
     }
     
     .nav-link a{
@@ -105,4 +117,8 @@ main{
         text-decoration: none;
     }
     
+    
+        
+    
+
 }
