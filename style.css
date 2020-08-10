@@ -76,10 +76,6 @@ main{
     transition: all 0.5s ease;
 }
 
-#profession.pre-animation{
-    text-align: center;
-}
-
 .svg-image{
     background: rgb(46, 0, 72);
     display: flex;
@@ -97,11 +93,10 @@ main{
     }
 
     .nav-links{
-        
         display: flex;
         height: 10vh;
         width: 100%;
-        position: relative;
+        position: fixed;
         flex-direction: row;
         justify-content: space-evenly;
         margin: auto;
@@ -109,8 +104,8 @@ main{
         clip-path: none;
         -webkit-clip-path: none;
         pointer-events: all;
+        box-shadow: 0px 0px 2px 2px black;
     }
-    
     .nav-link a{
         color: white;
         font-size: 20px;
